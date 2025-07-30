@@ -365,7 +365,7 @@ export const remove = mutation({
   },
 });
 
-export const getMyTasks = query({
+export const getPersonalTasks = query({
   args: {},
   handler: async (ctx) => {
     const userId = await getAuthUserId(ctx);
